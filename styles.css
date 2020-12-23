@@ -1,0 +1,94 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+
+:root {
+    --main-text-color: rgb(244,246,249);
+    --header-bg-color: rgb(27,31,36);
+    --main-bg-color: rgb(63,73,236);
+    --main-text-font: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    margin: 0;
+}
+
+#nav-box {
+    background-color: var(--header-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+}
+
+#company {
+    color: var(--main-text-color);
+    font-family: var(--main-text-font);
+    margin-right: 80px;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+/* ruleset to make the elements clickable */
+#company:hover {
+    cursor: pointer;
+    text-shadow: 6px 6px 6px var(--main-bg-color);
+}
+
+#sign-out {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    border-radius: 5%;
+    padding: 10px;
+    border: none;
+    font-family: var(--main-text-font);
+    margin-left: auto;
+    margin-right: 30px;
+}
+#sign-out:hover {
+    cursor: pointer;
+}
+
+.nav-elements {
+    color: var(--main-text-color);
+    font-family: var(--main-text-font);
+    margin-right: 40px;
+    transition: all 0.3s ease;
+}
+.nav-elements:hover {
+    cursor: pointer;
+    text-shadow: 6px 6px 6px var(--main-bg-color);
+}
+
+/* Mobile compatibility for most devices */
+@media all and (max-width: 699px) {
+    
+
+    #nav-box {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+
+    #company {
+        /* putting it in the center, and putting 
+        everything underneath it with the width 100 */
+        font-size: large;
+        margin-right: 50%;
+        margin-left: 50%; 
+        width: 100%;
+    }
+
+    /* Bringing these elements closer together by reducing 
+    their margin */
+    #sign-out {
+        margin-left: 10px;
+    }
+
+    .nav-elements {
+        margin: 10px;
+    }
+
+}
