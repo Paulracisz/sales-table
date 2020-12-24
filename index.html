@@ -11,15 +11,23 @@
 <body>
     <header>
     <div id="nav-box">
-        <h2 id="company">Company</h2>
+        <h1 id="company">Company</h1>
         <p class="nav-elements">Projects</p>
         <p class="nav-elements">Sales</p>
-        <p class="nav-elements">Messages</p>
+        <p id="messages" class="nav-elements">Messages <div id="sub-number"><b id="three">3️</b></div></p>
         <button id="sign-out">Sign Out</button>
     </div>
     </header>
     <main role="main">
-    <h1 id="Sales">Sales</h2>
+        <div id="filter-box">
+            <h2 id="sales">Sales</h2>
+            <div id="filter-by">Filter by quarter:
+            <input type="checkbox" id="Q1" name="Q1" value="None"> Q1
+            <input type="checkbox" id="Q2" name="Q2" value="None"> Q2
+            <input type="checkbox" id="Q1" name="Q1" value="None"> Q3
+            <input type="checkbox" id="Q1" name="Q1" value="None"> Q4
+            </div>
+    </div>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script type="text/javascript" src="sales-table.js"></script>
     </main>

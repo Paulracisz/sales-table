@@ -50,6 +50,48 @@ body {
     cursor: pointer;
 }
 
+#sub-number {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#messages {
+    margin-right: 4px;
+}
+
+#three {
+    font-family: var(--main-text-font);
+    color: var(--main-text-color);
+    font-size: 12px;
+}
+
+#sales {
+    text-align: left;
+    margin-left: 25%;
+    font-size: 35px;
+    margin-top: 40px;
+    color: var(--main-text-color);
+    font-family: var(--main-text-font);
+}
+
+#filter-box {
+    display: flex;
+    flex-direction: column;
+}
+
+#filter-by {
+    margin-left: 25%;
+    color: var(--main-text-color);
+    font-family: var(--main-text-font);
+}
+
+
 .nav-elements {
     color: var(--main-text-color);
     font-family: var(--main-text-font);
@@ -59,6 +101,10 @@ body {
 .nav-elements:hover {
     cursor: pointer;
     text-shadow: 6px 6px 6px var(--main-bg-color);
+}
+
+input {
+    margin-left: 10%;
 }
 
 /* Mobile compatibility for most devices */
@@ -75,7 +121,7 @@ body {
     #company {
         /* putting it in the center, and putting 
         everything underneath it with the width 100 */
-        font-size: large;
+        font-size: x-large;
         margin-right: 50%;
         margin-left: 50%; 
         width: 100%;
@@ -84,11 +130,27 @@ body {
     /* Bringing these elements closer together by reducing 
     their margin */
     #sign-out {
+        margin-left: 5px;
+    }
+
+    #sales {
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 20px;
+        color: var(--main-text-color);
+        font-family: var(--main-text-font);
+    }
+
+    #filter-by {
         margin-left: 10px;
     }
 
     .nav-elements {
         margin: 10px;
+    }
+
+    input {
+        margin-left: 5px;
     }
 
 }
