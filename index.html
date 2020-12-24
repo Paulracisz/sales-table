@@ -19,26 +19,88 @@
     </div>
     </header>
     <main role="main">
-        <div id="filter-box">
-            <h2 id="sales">Sales</h2>
-            <div id="filter-by">Filter by quarter:
-            <input type="checkbox" id="Q1" name="Q1" value="None"> Q1
-            <input type="checkbox" id="Q2" name="Q2" value="None"> Q2
-            <input type="checkbox" id="Q1" name="Q1" value="None"> Q3
-            <input type="checkbox" id="Q1" name="Q1" value="None"> Q4
-            </div>
-    </div>
-    <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
+        <div class="table-title">
+          <div id="filter-box">
+              <h2 id="sales">Sales</h2>
+              <div id="filter-by">Filter by quarter:
+              <label><input type="checkbox" id="Q1" name="Q1" value="1">Q1</label>
+              <label><input type="checkbox" id="Q2" name="Q2" value="2">Q2</label>
+              <label><input type="checkbox" id="Q3" name="Q3" value="3">Q3</label>
+              <label><input type="checkbox" id="Q4" name="Q4" value="4">Q4</label>
+              </div>
       </div>
+        <table id="table-box" class="table-fill">
+        <thead>
+        <tr>
+        <th class="text-right">Month</th>
+        <th class="text-right">Sales</th>
+        <th id="top-sales" class="text-right">Top Salesperson</th>
+        </tr>
+        </thead>
+        <tbody class="table-hover">
+        <tr>
+        <td class="text-left">January</td>
+        <td class="text-left">$50,000.00</td>
+        <td class="text-left">Angela</td>
+        </tr>
+        <tr>
+        <td class="text-left">February</td>
+        <td class="text-left">$10,000.00</td>
+        <td class="text-left">Roberto</td>
+        </tr>
+        <tr>
+        <td class="text-left">March</td>
+        <td class="text-left">$85,000.00</td>
+        <td class="text-left">Maria</td>
+        </tr>
+        <tr>
+        <td class="text-left">April</td>
+        <td class="text-left">$56,000.00</td>
+        <td class="text-left">Stacy</td>
+        </tr>
+        <tr>
+        <td class="text-left">May</td>
+        <td class="text-left">$68,000.00</td>
+        <td class="text-left">William</td>
+        </tr>
+        <tr>
+        <td class="text-left">June</td>
+        <td class="text-left">$32,000.00</td>
+        <td class="text-left">Darrel</td>
+        </tr>
+        <tr>
+        <td class="text-left">July</td>
+        <td class="text-left">$21,000.00</td>
+        <td class="text-left">Angela</td>
+        </tr>
+        <tr>
+        <td class="text-left">August</td>
+        <td class="text-left">$18,000.00</td>
+        <td class="text-left">Angela</td>
+        </tr>
+        <tr>
+        <td class="text-left">September</td>
+        <td class="text-left">$118,000.00</td>
+        <td class="text-left">Maria</td>
+        </tr>
+        <tr>
+        <td class="text-left">October</td>
+        <td class="text-left">$52,000.00</td>
+        <td class="text-left">Stacy</td>
+        </tr>
+        <tr>
+        <td class="text-left">November</td>
+        <td class="text-left">$87,000.00</td>
+        <td class="text-left">Angela</td>
+        <tr>
+        <td class="text-left">December</td>
+        <td class="text-left">$121,000.00</td>
+        <td class="text-left">William</td>
+        </tr>
+        </tr>
+        </tbody>
+        </table>
+          </div>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script type="text/javascript" src="sales-table.js"></script>
     </main>
