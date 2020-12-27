@@ -23,18 +23,18 @@
           <div id="filter-box">
               <h2 id="sales">Sales</h2>
               <div id="filter-by">Filter by quarter:
-              <label><input type="checkbox" id="Q1" name="Q1" onchange="onFilter(this)" value="1">Q1</label>
-              <label><input type="checkbox" id="Q2" name="Q2" onchange="onFilter(this)" value="2">Q2</label>
-              <label><input type="checkbox" id="Q3" name="Q3" onchange="onFilter(this)" value="3">Q3</label>
-              <label><input type="checkbox" id="Q4" name="Q4" onchange="onFilter(this)" value="4">Q4</label>
+              <label><input class="check" type="checkbox" id="Q1" onclick="onFilter(this)" >Q1</label>
+              <label><input class="check" type="checkbox" id="Q2" onclick="onFilter(this)" >Q2</label>
+              <label><input class="check" type="checkbox" id="Q3" onclick="onFilter(this)" >Q3</label>
+              <label><input class="check" type="checkbox" id="Q4" onclick="onFilter(this)" >Q4</label>
               </div>
       </div>
         <table id="table-box" class="table-fill">
         <thead>
         <tr>
         <th class="text-right">Month</th>
-        <th class="text-right">Sales</th>
-        <th id="top-sales" class="text-right">Top Salesperson</th>
+        <th id="sales-header" onclick="onSortTable('sales')" class="text-right">Sales</th>
+        <th id="top-sales" onclick="onSortTable('salesperson')" class="text-right">Top Salesperson</th>
         </tr>
         </thead>
         <tbody id="table-container" class="table-hover">

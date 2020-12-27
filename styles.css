@@ -98,6 +98,14 @@ body {
     white-space: normal;
 }
 
+#sales-header:hover {
+    cursor: pointer;
+}
+
+#top-sales:hover {
+    cursor: pointer;
+}
+
 #table-box {
     width: 100%;
 }
