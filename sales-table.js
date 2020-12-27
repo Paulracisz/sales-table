@@ -40,7 +40,7 @@ function onSortTable(whichSort) {
   clickCounter++;
 
   const sortedArray = new Array(...duplicateArray);
-  
+
   // conditional to see which heading was clicked to sort either sales person, or sales numbers
 
   if (whichSort == "sales") {
@@ -49,14 +49,14 @@ function onSortTable(whichSort) {
     });
   } else if (whichSort == "salesperson") {
     sortedArray.sort((a, b) => {
-        if ( a.topSalesPerson < b.topSalesPerson ){
-          return -1;
-        }
-        if ( a.topSalesPerson > b.topSalesPerson ){
-          return 1;
-        }
-        return 0;
-      });
+      if (a.topSalesPerson < b.topSalesPerson) {
+        return -1;
+      }
+      if (a.topSalesPerson > b.topSalesPerson) {
+        return 1;
+      }
+      return 0;
+    });
   }
 
   if (clickCounter == 1) {
@@ -65,8 +65,6 @@ function onSortTable(whichSort) {
     renderTable(sortedArray.reverse());
   } else if (clickCounter == 3) {
     renderTable(duplicateArray);
-    // triggerFilter = current checked box
-    // if checked box = 1, make copy of duplicateArray.slice(0,3)
     clickCounter = 0;
   }
 }
