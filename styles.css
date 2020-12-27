@@ -268,6 +268,7 @@ th.text-center {
 td.text-left {
   text-align: left;
   white-space: nowrap;
+  color: black;
 }
 
 td.text-center {
